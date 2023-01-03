@@ -7,3 +7,44 @@
 body {
     background-color: var(--background)
 }
+
+.fullwidth {
+    width: 100%
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.jc-start {
+    justify-content: flex-start;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-start {
+    align-items: flex-start;
+}
+
+.ai-end {
+    align-items: flex-end;
+}
