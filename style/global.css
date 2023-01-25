@@ -1,50 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "Camilla-Coppi-font";
+  src: url("../fonts/MADE\ Mirage\ Regular.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Camilla-Coppi-font";
+  src: url("../fonts/MADE\ Mirage\ Medium.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Camilla-Coppi-font";
+  src: url("../fonts/MADE\ Mirage\ Bold.otf");
+  font-weight: 800;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background)
+  background-color: var(--background);
+  font-family: "New Cycle", sans-serif;
 }
 
-.fullwidth {
-    width: 100%
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .container {
-    width: 1280px;
-    margin: 0 auto;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .debug {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .jc-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .jc-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .jc-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .ai-center {
-    align-items: center;
+  align-items: center;
 }
 
 .ai-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .ai-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }

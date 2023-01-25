@@ -1,0 +1,58 @@
+header {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-main);
+  transition: height 0.3s ease;
+  border-bottom: 1px solid var(--primary-dark);
+}
+
+header.scrolled {
+  height: 60px;
+}
+
+.header {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 100%;
+}
+
+.header nav {
+  height: 100%;
+}
+
+.header nav ul {
+  list-style: none;
+  font-weight: 600;
+  font-family: "Camilla-Coppi-font", sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+.header nav ul a {
+  padding: 0px 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.header nav ul a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header nav ul a li {
+  color: var(--primary-text);
+}
+
+.header nav ul .divider {
+  height: 50%;
+  width: 1px;
+  background-color: #937d6f;
+}
