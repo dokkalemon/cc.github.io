@@ -40,6 +40,9 @@ header.scrolled {
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
+  font-size: 18px;
+  font-family: "Camilla-Coppi-Bodoni";
+  font-weight: 400;
 }
 
 .header nav ul a:hover {
