@@ -3,7 +3,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #f0ede8;
+  background-color: var(--primary-light);
   transition: height 0.3s ease;
 }
 
@@ -27,7 +27,7 @@ header.scrolled {
 .header nav ul {
   list-style: none;
   font-weight: 600;
-  font-family: "Camilla-Coppi-font", sans-serif;
+  font-family: "Camilla Sans Serif", serif;
   font-size: 16px;
   height: 100%;
 }
@@ -46,6 +46,20 @@ header.scrolled {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.header nav ul a.contrast {
+  background-color: var(--primary-dark);
+  font-family: "Camilla Cursive";
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.header nav ul a.contrast li {
+  color: white;
+  line-height: 0px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
 .header nav ul a li {
   color: var(--primary-text);
 }
@@ -53,5 +67,5 @@ header.scrolled {
 .header nav ul .divider {
   height: 50%;
   width: 1px;
-  background-color: #937d6f;
+  background-color: var(--primary-dark);
 }

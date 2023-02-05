@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
 
 @font-face {
-  font-family: "Camilla-Coppi-font";
+  font-family: "Camilla Sans Serif";
   src: url("../fonts/MADE\ Mirage\ Regular.otf");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Camilla-Coppi-font";
+  font-family: "Camilla Sans Serif";
   src: url("../fonts/MADE\ Mirage\ Medium.otf");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Camilla-Coppi-font";
+  font-family: "Camilla Sans Serif";
   src: url("../fonts/MADE\ Mirage\ Bold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Camilla Cursive";
+  src: url("../fonts/CollectionNewStyle.ttf");
   font-weight: 800;
 }
 
@@ -21,6 +27,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,7 +45,7 @@ a {
 }
 
 .container {
-  width: 1280px;
+  width: 1380px;
   margin: 0 auto;
 }
 
@@ -72,4 +79,45 @@ a {
 
 .ai-end {
   align-items: flex-end;
+}
+
+.back-up-container {
+  position: fixed;
+  bottom: -100%;
+  right: 40px;
+  height: 100px;
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.back-up-container.showed {
+  bottom: 40px;
+}
+
+.back-up-button {
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-dark);
+  position: absolute;
+  bottom: 0;
+}
+.back-up-button .iconify {
+  font-size: 30px;
+  color: white;
+}
+
+.back-up-container:hover .back-up-button {
+  animation: test 1s 0s ease-out infinite;
+}
+
+@keyframes test {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
