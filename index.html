@@ -1,84 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Camilla Coppi | Psicologa</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="./style/variables.css">
-    <link rel="stylesheet" href="./style/global.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/desktop.css">
-    <link rel="stylesheet" href="./style/tablet.css">
-    <link rel="stylesheet" href="./style/phone.css">
+    <link
+      rel="stylesheet"
+      href="./style/variables.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style/desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style/phone.css"
+    />
 
     <!-- FontAwesome -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+    />
 
     <!-- GSAP Animation -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js' integrity='sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==' crossorigin='anonymous'></script>
-    
-    <!-- Iconify -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.1/iconify.min.js' integrity='sha512-iRgb1ff/Wl54Jx70b9hGCNwzgDJzXXwgWJQeukz/ckC+5PJvVFCXf5CpR2MsRBOQ6WRcM2HyHO9bmA1DHBfPPg==' crossorigin='anonymous'></script>
-</head>
-<body>
-    
-    <header class="full-width">
-        <div class="header container flex ai-center">
-            <nav class="left"><ul class="full-width flex jc-end ai-center">
-                <a href="#aboutMe"><li>Chi Sono</li></a>
-                <div class="divider"></div>
-                <a href="#learning"><li>La mia formazione</li></a>
-            </ul></nav>
-            <div class="logo">
-                <img src="./assets/logo.svg" alt="">
-            </div>    
-            <nav class="right"><ul class="full-width flex jc-end ai-center">
-                <a href="#services"><li>I miei Servizi</li></a>
-                <div class="divider"></div>
-                <a href="#contactme" class="contrast"><li>Contattami</li></a>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+    ></script>
 
-            </ul></nav>
-      
-          
-            
+    <!-- Iconify -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.1/iconify.min.js"
+      integrity="sha512-iRgb1ff/Wl54Jx70b9hGCNwzgDJzXXwgWJQeukz/ckC+5PJvVFCXf5CpR2MsRBOQ6WRcM2HyHO9bmA1DHBfPPg=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="full-width">
+      <div
+        class="header container flex ai-center"
+      >
+        <nav class="left">
+          <ul
+            class="full-width flex jc-end ai-center"
+          >
+            <a href="#aboutMe"
+              ><li>Chi Sono</li></a
+            >
+            <div class="divider"></div>
+            <a href="#learning"
+              ><li>La mia formazione</li></a
+            >
+          </ul>
+        </nav>
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="" />
         </div>
+        <nav class="right">
+          <ul
+            class="full-width flex jc-end ai-center"
+          >
+            <a href="#services"
+              ><li>I miei Servizi</li></a
+            >
+            <div class="divider"></div>
+            <a href="#contactme" class="contrast"
+              ><li>Contattami</li></a
+            >
+          </ul>
+        </nav>
+      </div>
     </header>
+    <div id="up"></div>
+    <section class="jumbotron" id="aboutMe">
+      <div class="jumbotron-color"></div>
+      <div class="jumbotron-container container">
+        <div
+          class="jumbotron-photo-container flex ai-center jc-center"
+        >
+          <div class="jumbotron-photo"></div>
+        </div>
+        <div
+          class="jumbotron-text-container flex ai-center jc-center"
+        >
+          <div
+            class="jumbotron-text flex jc-center"
+          >
+            <h2>Ciao sono Camilla...</h2>
+            <div
+              class="jumbotron-text-paragraph flex ai-start jc-start"
+            >
+              <p>
+                Sono la Dott.ssa Camilla Coppi,
+                Psicologa Clinica e specializzanda
+                in Psicoterapia ad orientamento
+                Umanistico Integrato, esperta in
+                Psicologia Scolastica e
+                PsicoNeuroEndocrinoImmunologia e
+                Scienza della cura integrata.
+              </p>
+              <p>
+                Come psicologa, il concetto che mi
+                rappresenta è l’integrazione: come
+                accoglienza delle varie parti di
+                se stessi e come accettazione
+                delle sfumature che coesistono in
+                ognuno. Sostengo e incoraggio
+                l’utilizzo della vocale E, la
+                vocale salvavita. Ciò significa
+                accogliersi nelle sfumature delle
+                infinite possibilità, smettendo di
+                pensarsi in termini di O,
+                escludenti e categorizzanti. Si
+                può essere l’ una e l’altra cosa,
+                accettando e amando tutte le parti
+                presenti in se stessi.
+              </p>
+              <p>
+                <b
+                  >È incredibile come una piccola
+                  vocale puó fare una grande
+                  differenza!</b
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="education"
+      id="learning"
+    ></section>
+    <div style="height: 100000px"></div>
 
     <a href="#up">
-    <div class="back-up-container">
-            <div class="back-up-button flex ai-center jc-center">
-                <span class="iconify" data-icon="iconoir:one-finger-select-hand-gesture"></span>
-            </div>
+      <div class="back-up-container">
+        <div
+          class="back-up-button flex ai-center jc-center"
+        >
+          <span
+            class="iconify"
+            data-icon="iconoir:one-finger-select-hand-gesture"
+          ></span>
         </div>
+      </div>
     </a>
-
-    <section class="jumbotron">
-        <div class="jumbotron-color"></div>
-        <div class="jumbotron-container container">
-            <div class="jumbotron-photo-container flex ai-center jc-center">
-                <div class="jumbotron-photo"></div>
-            </div>
-            <div class="jumbotron-text-container flex ai-center jc-center">
-                <div class="jumbotron-text flex jc-center">
-                    <h2>Ciao sono Camilla...</h2>
-                    <div class="jumbotron-text-paragraph flex ai-start jc-start" >
-                        <p>Sono la Dott.ssa Camilla Coppi, Psicologa Clinica e specializzanda in Psicoterapia ad orientamento Umanistico Integrato, esperta in Psicologia Scolastica e PsicoNeuroEndocrinoImmunologia e Scienza della cura integrata.</p>
-                        <p>Come psicologa, il concetto che mi rappresenta è l’integrazione: come accoglienza delle varie parti di se stessi e come accettazione delle sfumature che coesistono in ognuno.
-                            Sostengo e incoraggio l’utilizzo della vocale E, la vocale salvavita. Ciò significa accogliersi nelle sfumature delle infinite possibilità, smettendo di pensarsi in termini di O, escludenti e categorizzanti.
-                            Si può essere l’ una e l’altra cosa, accettando e amando tutte le parti presenti in se stessi.</p>
-                           <p><b>È incredibile come una piccola vocale puó fare una grande differenza!</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

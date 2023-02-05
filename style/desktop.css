@@ -2,4 +2,17 @@
   .container {
     width: 100%;
   }
+  .jumbotron-text h2 {
+    font-size: 100px;
+  }
+  .jumbotron-photo {
+    width: 85%;
+  }
+  .jumbotron-text {
+    height: 100%;
+    width: 100%;
+  }
+  .jumbotron-text-paragraph p {
+    width: 95%;
+  }
 }
