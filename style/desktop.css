@@ -15,4 +15,7 @@
   .jumbotron-text-paragraph p {
     width: 95%;
   }
+  .jumbotron-adornment {
+    right: 5vw;
+  }
 }

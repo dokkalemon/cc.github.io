@@ -6,4 +6,8 @@
     width: 100%;
     padding: 0px 20px;
   }
+  .jumbotron-photo {
+    width: 95%;
+    height: 600px;
+  }
 }

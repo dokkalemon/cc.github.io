@@ -29,7 +29,8 @@ header.scrolled {
 }
 
 header.scrolled .header .logo {
-  width: 100px;
+  width: 90px;
+  height: 50%;
 }
 
 .header nav {
@@ -142,6 +143,17 @@ header.scrolled .header .logo {
   font-size: 16px;
   line-height: 30px;
   color: var(--secondary-dark);
+}
+.jumbotron-adornment {
+  position: absolute;
+  top: 200px;
+  right: 13vw;
+  height: 300px;
+  width: 300px;
+}
+.jumbotron-adornment img {
+  height: 100%;
+  opacity: 0.5;
 }
 
 .education {

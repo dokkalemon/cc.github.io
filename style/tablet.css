@@ -41,4 +41,8 @@
     text-align: center;
     width: 70%;
   }
+  .jumbotron-adornment {
+    bottom: 400px;
+    top: auto;
+  }
 }
