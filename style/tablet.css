@@ -18,9 +18,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .jumbotron-photo {
+  .jumbotron-photo-white {
     width: 430px;
     height: 600px;
+    padding: 10px;
   }
   .jumbotron-text-container {
     width: 100%;
