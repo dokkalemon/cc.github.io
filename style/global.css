@@ -102,7 +102,7 @@ a {
 }
 
 .back-up-container:hover .back-up-button {
-  animation: test 1s 0s ease-out infinite;
+  animation: test 0.5s 0s ease-out infinite;
 }
 
 @keyframes test {
@@ -115,4 +115,49 @@ a {
   100% {
     bottom: 0px;
   }
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid;
+  font-weight: 700;
+}
+
+.button.primary {
+  background-color: var(--primary-main);
+  border-color: var(--primary-main);
+  color: var(--primary-main);
+}
+.button.secondary {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+  color: var(--secondary-dark);
+}
+
+.button:active.primary {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
+}
+.button:active.secondary {
+  background-color: var(--secondary-light);
+  border-color: var(--secondary-light);
+  color: var(--secondary-light);
+}
+
+.button.outlined,
+.button:active.outlined {
+  background-color: transparent;
+}
+
+.button.contained,
+.button:active.contained {
+  color: white;
 }
