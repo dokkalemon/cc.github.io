@@ -60,3 +60,5 @@ gsap.fromTo('.education-photo-img', {
         start: 'top center',
     }
 })
+
+

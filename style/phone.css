@@ -10,4 +10,9 @@
     width: 95%;
     height: 600px;
   }
+  .education-text h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 120px;
+  }
 }

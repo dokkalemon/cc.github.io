@@ -45,4 +45,38 @@
     bottom: 400px;
     top: auto;
   }
+  .education-container {
+    height: auto;
+  }
+  .education {
+    height: auto;
+  }
+  .education-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 10px;
+  }
+  .education-text {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .education-text h3 {
+    text-align: center;
+    width: 100%;
+  }
+  .education-text p {
+    text-align: center;
+    width: 80%;
+  }
+  .education-photo {
+    width: 100%;
+  }
+  .education-photo-img {
+    height: 400px;
+  }
+  .education .adornment {
+    top: 60%;
+  }
 }
