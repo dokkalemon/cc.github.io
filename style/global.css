@@ -25,9 +25,14 @@
   scroll-behavior: smooth;
 }
 
+*::selection {
+  background-color: var(--secondary-dark);
+  color: #ffffff;
+}
+
 body {
   background-color: var(--background);
-  font-family: "Roboto", sans-serif;
+  font-family: "Camilla-Coppi-Bodoni", sans-serif;
 }
 
 a {

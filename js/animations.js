@@ -13,6 +13,7 @@ gsap.fromTo('.education-text h3', {
     scrollTrigger: {
         trigger: '.education-container',
         start: 'top center',
+        end: 'bottom bottom'
     }
 })
 
