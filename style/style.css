@@ -169,6 +169,8 @@ header.scrolled .header .logo {
   top: 0;
   position: sticky;
   padding-top: 0px;
+  position: relative;
+  z-index: 2;
 }
 .education-wrapper {
   justify-content: space-between;
@@ -199,6 +201,8 @@ header.scrolled .header .logo {
 .education-photo {
   height: 100%;
   width: 50%;
+  z-index: 10;
+  position: relative;
 }
 
 .education-photo-img {
@@ -210,4 +214,15 @@ header.scrolled .header .logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.education-container .adornment {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 30px;
+  right: 9%;
+
+  background-image: url("../images/adornment.png");
+  background-size: cover;
+  z-index: 1;
 }

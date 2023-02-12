@@ -3,13 +3,13 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 gsap.fromTo('.education-text h3', {
-    x: -200,
+    x: -50,
     opacity: 0,
-    duration: 0.5,
 
 }, {
     x: 0,
     opacity: 1,
+    duration: 0.5,
     scrollTrigger: {
         trigger: '.education-container',
         start: 'top center',
@@ -17,9 +17,9 @@ gsap.fromTo('.education-text h3', {
 })
 
 gsap.fromTo('.education-text p', {
-    x: -200,
+    x: -50,
     opacity: 0,
-    duration: 0.5,
+    duration: 2,
 
 }, {
     x: 0,
@@ -32,9 +32,9 @@ gsap.fromTo('.education-text p', {
 })
 
 gsap.fromTo('.education-text button', {
-    x: -400,
+    x: -50,
     opacity: 0,
-    duration: 0.5,
+    duration: 1,
 
 }, {
     x: 0,
@@ -47,9 +47,9 @@ gsap.fromTo('.education-text button', {
 })
 
 gsap.fromTo('.education-photo-img', {
-    x: 400,
+    x: 50,
     opacity: 0,
-    duration: 0.5,
+    duration: 1,
 
 }, {
     x: 0,
