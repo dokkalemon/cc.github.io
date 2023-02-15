@@ -26,7 +26,7 @@
 }
 
 *::selection {
-  background-color: var(--secondary-dark);
+  background-color: var(--primary-dark);
   color: #ffffff;
 }
 
@@ -166,4 +166,81 @@ a {
 .button.contained,
 .button:active.contained {
   color: white;
+}
+
+form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input input {
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+}
+
+.input textarea {
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+}
+
+.input label {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  padding: 10px 0px;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.2s;
+  font-weight: 100;
+  font-size: 19px;
+}
+
+.input input:focus ~ label,
+.input input:valid ~ label,
+.input textarea:focus ~ label,
+.input textarea:valid ~ label {
+  top: -19px;
+  left: 5px;
+  font-size: 14px;
+  background-color: var(--secondary-dark);
+  font-weight: 100;
+  padding: 10px 5px;
+}
+
+.input span {
+  height: 1px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  bottom: 9px;
+  transition: 0.2s;
+}
+
+.input input:focus ~ span,
+.input input:valid ~ span {
+  width: 100%;
 }

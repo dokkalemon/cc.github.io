@@ -280,6 +280,7 @@ header.scrolled .header .logo {
 .intervention-area {
   background-color: var(--primary-main);
   padding: 100px 0px;
+  background-image: url("../assets/texture.png");
 }
 
 .intervention-area-container {
@@ -377,4 +378,82 @@ header.scrolled .header .logo {
 .card h4 {
   font-size: 25px;
   font-weight: 100;
+}
+
+.appointment {
+  background-color: var(--primary-light);
+}
+
+.half-item {
+  width: 50%;
+  padding: 100px 0px;
+  display: flex;
+}
+.half-item.colored {
+  background-color: var(--secondary-dark);
+  padding-top: 200px;
+}
+
+.half-item.right {
+  justify-content: flex-start;
+}
+
+.half-item.left {
+  justify-content: flex-end;
+}
+
+.half-container {
+  width: 690px;
+  padding: 20px;
+}
+
+.half-container h3 {
+  font-family: "Camilla-Coppi-Cursive";
+  font-size: 140px;
+  line-height: 100px;
+  color: var(--secondary-dark);
+}
+
+.half-container p {
+  width: 100%;
+  font-size: 19px;
+  line-height: 30px;
+  font-family: "Camilla-Coppi-Bodoni";
+  color: var(--secondary-dark);
+}
+
+.half-container p a {
+  color: var(--secondary-dark);
+}
+.half-container p a:hover {
+  color: var(--primary-dark);
+}
+
+.half-container span {
+  font-size: 15px;
+  line-height: 1px;
+}
+
+.half-container .place {
+  margin-top: 40px;
+}
+
+.half-container .place h4 {
+  font-size: 25px;
+  font-weight: 100;
+  color: var(--secondary-dark);
+}
+
+.half-item.colored p {
+  font-size: 19px;
+  color: white;
+  font-weight: 100;
+}
+
+.half-item.colored .half-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 10px;
 }
