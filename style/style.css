@@ -456,3 +456,25 @@ header.scrolled .header .logo {
   align-items: flex-start;
   margin-top: 10px;
 }
+
+.quick {
+  padding: 10px;
+  padding-bottom: 20px;
+  background-color: var(--primary-main);
+}
+
+.quick-container {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quick-container h5 {
+  font-size: 19px;
+  font-weight: 100;
+  color: var(--secondary-dark);
+}
+
+.contact {
+  display: flex;
+  gap: 20px;
+}
