@@ -106,7 +106,7 @@ header.scrolled .header .logo {
 .jumbotron-photo {
   height: 70%;
   width: 70%;
-  background-image: url("../images/jumbo.jpg");
+  background-image: url("../assets/jumbo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -165,7 +165,7 @@ header.scrolled .header .logo {
   height: 100vh;
   width: 100%;
   background-color: var(--primary-main);
-  background-image: url("../images/texture.png");
+  background-image: url("../assets/texture.png");
   top: 0;
   position: sticky;
   padding-top: 0px;
@@ -207,10 +207,10 @@ header.scrolled .header .logo {
 
 .education-photo-img {
   height: 70%;
-  width: 70%;
+  width: 72%;
   border: 10px solid white;
   box-shadow: 0px 3px 10px #00000050;
-  background-image: url("../images/education.jpg");
+  background-image: url("../assets/education.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -222,7 +222,7 @@ header.scrolled .header .logo {
   top: 30px;
   right: 9%;
 
-  background-image: url("../images/adornment.png");
+  background-image: url("../assets/adornment2.png");
   background-size: cover;
   z-index: 1;
 }
@@ -232,12 +232,17 @@ header.scrolled .header .logo {
   background-color: var(--primary-light);
   padding-top: 100px;
   padding-bottom: 100px;
+  border-top: 5px solid var(--primary-dark);
+  border-bottom: 5px solid var(--primary-dark);
+  box-shadow: inset 0px 2px 10px
+    rgba(0, 0, 0, 0.3);
 }
 
 .services-container {
   height: 100%;
   flex-direction: column;
   gap: 20px;
+  position: relative;
 }
 
 .services-container h3 {
@@ -245,41 +250,29 @@ header.scrolled .header .logo {
   font-size: 140px;
   line-height: 100px;
   color: var(--secondary-dark);
+  position: relative;
+  z-index: 2;
 }
 
-.service-container {
+.services-container p {
   width: 100%;
-  display: flex;
-}
-
-.service-container.left {
-  justify-content: flex-start;
-}
-.service-container.right {
-  justify-content: flex-end;
-}
-
-.service {
-  height: 100%;
-  width: 70%;
-  background-color: white;
-  padding: 50px;
-  border: 5px solid var(--primary-main);
-  box-shadow: 0px 2px 10px var(--primary-main);
-  flex-direction: column;
-  gap: 10px;
-}
-
-.service h2 {
-  font-weight: 100;
-  color: var(--secondary-dark);
-  font-size: 30px;
-}
-
-.service p {
-  width: 90%;
   font-size: 19px;
   line-height: 30px;
+  width: 50%;
+  text-align: center;
   font-family: "Camilla-Coppi-Bodoni";
   color: var(--secondary-dark);
+  position: relative;
+  z-index: 2;
+}
+
+.services-container .adornment {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: -30px;
+  right: 25%;
+  background-image: url("../assets/adornment.png");
+  background-size: cover;
+  z-index: 1;
 }

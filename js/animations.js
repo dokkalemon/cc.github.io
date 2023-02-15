@@ -63,3 +63,28 @@ gsap.fromTo('.education-photo-img', {
 })
 
 
+gsap.fromTo('.services-container h3', {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+}, {
+    opacity: 1,
+    y: 0,
+    scrollTrigger: {
+        trigger: '.services',
+        start: 'top center',
+    }
+})
+
+gsap.fromTo('.services-container p', {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+}, {
+    opacity: 1, y: 0,
+    delay: 0.3,
+    scrollTrigger: {
+        trigger: '.services',
+        start: 'top center',
+    }
+})
