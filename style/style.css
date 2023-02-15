@@ -276,3 +276,105 @@ header.scrolled .header .logo {
   background-size: cover;
   z-index: 1;
 }
+
+.intervention-area {
+  background-color: var(--primary-main);
+  padding: 100px 0px;
+}
+
+.intervention-area-container {
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.intervention-area-container h3 {
+  font-family: "Camilla-Coppi-Cursive";
+  font-size: 140px;
+  line-height: 100px;
+  color: var(--secondary-dark);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.intervention-area-card-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.intervention-area-card-container.left {
+  justify-content: flex-start;
+}
+.intervention-area-card-container.right {
+  justify-content: flex-end;
+}
+
+.card {
+  padding: 40px;
+  background-color: var(--primary-light);
+  width: 60%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--secondary-dark);
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-main);
+}
+
+.title h4 {
+  font-size: 25px;
+  font-weight: 100;
+  color: var(--secondary-dark);
+}
+
+.title h5 {
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--secondary-dark);
+}
+
+.dotted-list {
+  width: 100%;
+  margin-top: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dotted-list .item {
+  display: inline-flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 19px;
+  color: var(--secondary-dark);
+}
+.dotted-list .item p {
+  line-height: 20px;
+}
+.dotted-list .item img {
+  height: 15px;
+  filter: contrast(0.1);
+  margin-top: 2px;
+}
+.card .text {
+  margin-top: 15px;
+  font-size: 19px;
+  text-align: center;
+  color: var(--secondary-dark);
+  display: inline-flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card h4 {
+  font-size: 25px;
+  font-weight: 100;
+}

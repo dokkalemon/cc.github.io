@@ -15,4 +15,24 @@
     width: 100%;
     font-size: 120px;
   }
+  .services-container h3 {
+    text-align: center;
+    line-height: 50px;
+    font-size: 120px;
+  }
+  .services-container p {
+    width: 90%;
+  }
+
+  .intervention-area-container h3 {
+    font-size: 120px;
+  }
+
+  .intervention-area-card-container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
 }

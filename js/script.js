@@ -11,3 +11,4 @@ const scrollWindow = () => {
 };
 
 window.addEventListener("scroll", scrollWindow);
+

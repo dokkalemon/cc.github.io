@@ -79,4 +79,12 @@
   .education .adornment {
     top: 60%;
   }
+
+  .intervention-area-card-container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
 }

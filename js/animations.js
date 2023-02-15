@@ -88,3 +88,57 @@ gsap.fromTo('.services-container p', {
         start: 'top center',
     }
 })
+
+gsap.fromTo('.intervention-area-container h3', {
+    opacity: 0,
+    top: 100,
+    opacity: 0
+}, {
+    opacity: 1,
+    top: 0,
+    scrollTrigger: {
+        trigger: '.intervention-area',
+        start: 'top center',
+    }
+})
+
+const cards = document.querySelectorAll('.intervention-area-card-container .card')
+
+gsap.fromTo(cards[0], {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+}, {
+    x: 0,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: cards[0],
+        start: 'top center',
+    }
+})
+
+gsap.fromTo(cards[1], {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+}, {
+    x: 0,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: cards[1],
+        start: 'top center',
+    }
+})
+
+gsap.fromTo(cards[2], {
+    x: -100,
+    opacity: 0,
+    duration: 1,
+}, {
+    x: 0,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: cards[2],
+        start: 'top center',
+    }
+})
