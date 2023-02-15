@@ -328,6 +328,7 @@ header.scrolled .header .logo {
 .title h4 {
   font-size: 25px;
   font-weight: 100;
+  font-family: "Camilla-Coppi-Bodoni";
   color: var(--secondary-dark);
 }
 
