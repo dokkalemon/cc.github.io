@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600&display=swap");
 
 @font-face {
   font-family: "Camilla-Coppi-Bodoni";
@@ -32,7 +32,7 @@
 
 body {
   background-color: var(--background);
-  font-family: "Camilla-Coppi-Bodoni", sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 a {
@@ -133,7 +133,8 @@ a {
   overflow: hidden;
   cursor: pointer;
   border: 1px solid;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: "Overpass";
 }
 
 .button.primary {

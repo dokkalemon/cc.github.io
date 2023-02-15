@@ -61,13 +61,11 @@ header.scrolled .header .logo {
   justify-content: flex-start;
 }
 .header nav ul a li {
-  font-family: "Camilla-Coppi-Bodoni";
   font-size: 17px;
   color: var(--text-color);
 }
 
 .header nav ul a li:hover {
-  font-family: "Camilla-Coppi-Bodoni";
   font-size: 17px;
   color: var(--primary-main);
   transition: all 0.3s ease;
@@ -141,7 +139,7 @@ header.scrolled .header .logo {
   width: 100%;
   font-size: 19px;
   line-height: 30px;
-  font-family: "Camilla-Coppi-Bodoni";
+  font-weight: 200;
   color: var(--secondary-dark);
 }
 .jumbotron-adornment {
@@ -195,7 +193,7 @@ header.scrolled .header .logo {
   width: 100%;
   font-size: 19px;
   line-height: 30px;
-  font-family: "Camilla-Coppi-Bodoni";
+  font-weight: 200;
   color: var(--secondary-dark);
 }
 .education-photo {
@@ -260,7 +258,7 @@ header.scrolled .header .logo {
   line-height: 30px;
   width: 50%;
   text-align: center;
-  font-family: "Camilla-Coppi-Bodoni";
+  font-weight: 100;
   color: var(--secondary-dark);
   position: relative;
   z-index: 2;
@@ -304,10 +302,10 @@ header.scrolled .header .logo {
 }
 
 .intervention-area-card-container.left {
-  justify-content: flex-start;
+  justify-content: center;
 }
 .intervention-area-card-container.right {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .card {
@@ -335,7 +333,7 @@ header.scrolled .header .logo {
 
 .title h5 {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 500;
   color: var(--secondary-dark);
 }
 
@@ -346,6 +344,7 @@ header.scrolled .header .logo {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  font-weight: 100;
 }
 
 .dotted-list .item {
@@ -357,6 +356,7 @@ header.scrolled .header .logo {
 }
 .dotted-list .item p {
   line-height: 20px;
+  font-weight: 100;
 }
 .dotted-list .item img {
   height: 15px;
@@ -373,6 +373,7 @@ header.scrolled .header .logo {
   gap: 30px;
   justify-content: flex-start;
   align-items: center;
+  font-weight: 100;
 }
 
 .card h4 {
@@ -418,7 +419,7 @@ header.scrolled .header .logo {
   width: 100%;
   font-size: 19px;
   line-height: 30px;
-  font-family: "Camilla-Coppi-Bodoni";
+  font-weight: 100;
   color: var(--secondary-dark);
 }
 
