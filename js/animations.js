@@ -169,7 +169,7 @@ gsap.fromTo('#appointment p', {
     }
 })
 
-gsap.fromTo('#appointment h4', {
+gsap.fromTo('#appointment h4, .place', {
     x: -100,
     opacity: 0,
     duration: 1,
