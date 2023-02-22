@@ -211,7 +211,7 @@ form {
   position: absolute;
   top: 3px;
   left: 10px;
-  padding: 10px 0px;
+  padding: 0px 0px;
   font-size: 16px;
   color: #fff;
   pointer-events: none;
@@ -224,12 +224,12 @@ form {
 .input input:valid ~ label,
 .input textarea:focus ~ label,
 .input textarea:valid ~ label {
-  top: -19px;
+  top: -8px;
   left: 5px;
   font-size: 14px;
   background-color: var(--secondary-dark);
   font-weight: 100;
-  padding: 10px 5px;
+  padding: 0px 5px;
 }
 
 .input span {

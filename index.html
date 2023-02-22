@@ -576,11 +576,11 @@
             Utilizza il modulo qui di seguito per
             inviarmi una mail
           </p>
-          <form>
+          <form action="./php/sendmail.php" method="post">
             <div class="input first-name">
               <input
                 type="text"
-                name="email"
+                name="name"
                 required
               />
               <label>Nome e Cognome</label>
@@ -598,6 +598,7 @@
                 required
                 rows="10"
                 cols="50"
+                name="message"
               ></textarea>
               <label>Messaggio</label>
             </div>
