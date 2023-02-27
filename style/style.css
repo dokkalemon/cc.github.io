@@ -339,11 +339,11 @@ header.scrolled .header .logo {
 }
 
 .dotted-list {
-  width: 100%;
   margin-top: 15px;
+  margin: 15px auto;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
   font-weight: 100;
 }
@@ -358,6 +358,7 @@ header.scrolled .header .logo {
 .dotted-list .item p {
   line-height: 20px;
   font-weight: 100;
+  text-align: left;
 }
 .dotted-list .item img {
   height: 15px;
