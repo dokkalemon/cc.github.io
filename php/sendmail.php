@@ -1,52 +1,60 @@
 <?php
 
-$to = 'dottori.roberto@gmail.com';
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $to = 'dottori.roberto@gmail.com';
+    $name = htmlspecialchars(trim($_POST["name"]), ENT_QUOTES, 'UTF-8');
+    $mail = htmlspecialchars(trim($_POST["email"]), ENT_QUOTES, 'UTF-8');
+    $message = htmlspecialchars(trim($_POST["message"]), ENT_QUOTES, 'UTF-8');
 
-$name = trim(stripslashes($_POST["name"]));
-$mail = trim(stripslashes($_POST["mail"]));
-$message = trim(stripslashes($_POST["message"]));
+    $headers[] = "MIME-Version: 1.0";
+    $headers[] = "Content-type: 'text/html'; charset=utf-8";
 
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=utf-8';
-$headers[] = '<style>
-body {font-family: sans-serif;}
-p {font-size: 16px}
-</style>';
-
-
-
-$emailForMe = "<html>
-<div>
-    <h1>{$name} ti ha scritto!</h1>
-    <hr>
-</div>
-
-<div>
-    <p>{$message}</p>
-</div>
-
-<div>
-    <ul>
-        <li>Nome: {$name}</li>
-        <li>Email: {$mail}</li>
+    $emailForMe = "
+    <html>
+    <body>
+      <div>
+        <h1>{$name} ti ha scritto!</h1>
         <hr>
-    </ul>
-</div>
-</html>";
+      </div>
+      <div>
+        <p>{$message}</p>
+      </div>
+      <div>
+        <ul>
+          <li>Nome: {$name}</li>
+          <li>Email: {$mail}</li>
+        </ul>
+        <hr>
+      </div>
+    </body>
+  </html>
+    ";
 
+    $emailForOther = "
+    <html>
+      <body>
+        <div>
+          <h1>Grazie per averci contattato, {$name}!</h1>
+          <p>Ti risponderemo il prima possibile!</p>
+          <p>Dimora 50</p>
+        </div>
+      </body>
+    </html>
+  ";
 
-$emailForOther = "
-    <div>
-    <h1>Grazie per avermi Contattato {$name};</h1>
-    <p>Ti risponderemo il prima possibile!</p>
-    <p>Dimora 50</p>
-    </div>
+    //controllo sulla validità dell'indirizzo email inserito dall'utente
+     if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        if (mail($to, "Email da www.camillacoppi.it", $emailForMe, implode("\r\n", $headers))) {
+            mail($mail, "Camilla Coppi: Grazie per avermi contattata", $emailForOther, implode("\r\n", $headers));
+            header("Location: https://www.dimora50.it/");
+            exit();
+        } else {
+            echo "Errore durante l'invio della email. Si prega di riprovare più tardi.";
+        }
+    } else {
+        echo "Indirizzo email non valido. Si prega di riprovare.";
+    };
 
-";
-
-mail($to, "Email da www.dimora50.it", $emailForMe, implode("\r\n", $headers));
-mail($mail, "Dimora50: Grazie per averci contattato!", $emailForOther, implode("\r\n", $headers));
-
-header("location: https://www.dimora50.it/")
-
+    var_dump($emailForOther);
+};
 ?>
