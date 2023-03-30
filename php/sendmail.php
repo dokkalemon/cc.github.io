@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  $to = 'dottori.roberto@gmail.com';
+  $to = 'camilla.coppi@gmail.com';
   $name = htmlspecialchars(trim($_POST["name"]), ENT_QUOTES, 'UTF-8');
   $mail = htmlspecialchars(trim($_POST["email"]), ENT_QUOTES, 'UTF-8');
   $message = htmlspecialchars(trim($_POST["message"]), ENT_QUOTES, 'UTF-8');
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <body>
       <div>
         <h1>Grazie per avermi contattato, {$name}!</h1>
-        <p>Ti risponderò il prima possibile!</p>
+        <p>Ti rispondero' il prima possibile!</p>
         <p>Camilla</p>
       </div>
     </body>
